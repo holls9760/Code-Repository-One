@@ -1,0 +1,37 @@
+attemptCount=0
+
+while attemptCount<4:
+    print ("The Attempt Count=",attemptCount)
+    pin= int(input("enter pin"))
+    attemptCount+=1
+    if pin!=1234 and pin!=4321:
+        print ("Acess denied")
+    if pin==1234:
+        print("Welcome,(number of attempts",attemptCount,")")
+        balance=1000
+        print ("balance, withdrawal, balance and withdrawal")
+        service= input("what service would you like?")
+        if service=='balance':
+            print ("your balance is", balance)
+            service= input("would you like any other services?")
+        if service=='withdrawal':
+            withdrawal= int(input("how much would you like?"))
+            print ("this is your remaining balance", balance - withdrawal)
+    if pin==4321:
+        print("calling police")
+        print("Welcome,(number of attempts",attemptCount,")")
+        balance=1000
+        print ("balance, withdrawal, balance and withdrawal")
+        service= input("what service would you like?")
+        if service=='balance':
+            print ("your balance is", balance)
+            service= input("would you like any other services?")
+        if service=='withdrawal':
+            withdrawal= int(input("how much would you like?"))
+            print ("this is your remaining balance", balance - withdrawal)
+        break
+
+if attemptCount >=4:
+    print("You have Exceded the limit you're locked out")
+
+
