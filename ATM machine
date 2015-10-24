@@ -29,6 +29,7 @@ while attemptCount<4:
         if service=='withdrawal':
             withdrawal= int(input("how much would you like?"))
             print ("this is your remaining balance", balance - withdrawal)
+            print ("thank you for using this service")
         break
 
 if attemptCount >=4:
